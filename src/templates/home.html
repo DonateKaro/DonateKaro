@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ED PROJECT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href=" {{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href=" {{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" {{ url_for('static', filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href=" {{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href=" {{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href=" {{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href=" {{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href=" {{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href=" {{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href=" {{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DONATE KARO - v3.7.0
+  * Template URL: https://bootstrapmade.com/DONATE KARO-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    /* body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+    } */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Add padding to containers */
+    .reward {
+      font-family: cursive !important;
+      border-color: white;
+      /* border size: 10px; */
+
+    }
+
+    .qa {
+      width: 300px !important;
+      height: 65px;
+      color: white;
+      border-radius: 15px;
+      border: 1px solid white !important;
+      background-color: black !important;
+      /* border: 10px !important; */
+      border-color: white !important;
+    }
+
+    .qw {
+      width: 300px !important;
+      margin-right: 40px !important;
+      color: white;
+      border-radius: 15px;
+      /* font-size: 20px; */
+      background-color: black !important;
+      /* border-color: white !important; */
+      border: 1px solid white !important;
+      /* background-color: black !important; */
+    }
+
+    .containers {
+      padding: 40px;
+      background-color: black;
+      /* font-family: cursive !important;
+       */
+      font-family: "Playfair Display", serif;
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 19px;
+      margin: 10px 0 28px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 28px;
+    }
+
+    /* Set a style for the submit button */
+    .btns1 {
+      background-color: black !important;
+      border-radius: 10px;
+      border-color: white !important;
+      color: white;
+      padding: 16px 20px;
+      margin: 9px 0;
+      /* border: none; */
+      cursor: pointer;
+      width: 100%;
+      opacity: 1.9;
+      /* font-display: ; */
+    }
+
+    .registerbtn:hover {
+      opacity: 1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+
+    .btns1:hover {
+      background-color: #cda45e !important;
+      color: white !important;
+      transition: 0.3s;
+
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>9000576158</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 7PM</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">De</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="/home">DONATE KARO FOUNDATION</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About US</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#reward">Rewards</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="d-flex justify-content-end">
+        <a href="/ngo-registration" class="book-a-table-btn scrollto d-none d-lg-flex">FOR NGO</a> &nbsp; &nbsp;
+        <a href="/donation-form" class="book-a-table-btn scrollto d-none d-lg-flex">DONATE NOW</a>
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>DONATE KARO FOUNDATION </span></h1>
+          <h2>WEBSITE BY IITJ STUDENTS</h2>
+
+          <div class="btns">
+            <a href="/ngo-registration" class="btn-menu animated fadeInUp scrollto">FOR NGO</a>
+            <a href="/donation-form" class="btn-menu animated fadeInUp scrollto">DONATE NOW</a>
+            <!--<a href="#book-a-table" class="btn-book animated fadeInUp scrollto">QUERIES ? CLICK HERE</a>-->
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in"
+          data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=LVm-Z2sWY2c" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src=" {{ url_for('static', filename='assets/img/bg.jfif') }}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>OUR PURPOSE</h3>
+            <p class="fst-italic">
+              In India tones of medicines is
+              wasted every year. On the other
+              hand some people are dying due to
+              lack of same. So we took initiative to
+              donate them. We donate
+              the medicines,clothes,books which
+              are none of your use to the NGO
+              from where it reach the people who
+              actually need the.
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Us</h2>
+          <p>WHY CHOOSE US</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>CONVINIENT</h4>
+              <p>We work according to you, avail doorstep pickup according to
+                your convenience
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>TRANSPARENT</h4>
+              <p>Donations reach at right place, statistics are provided, and have
+                verified and trusted NGO partners</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4>REWARDS</h4>
+              <p>Exciting rewards for our first time users and credits/points for
+                regular users</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>THINGS YOU CAN DONATE</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- <div class="col-lg-6 menu-item filter-salads">
+            <img src="assets/img/menu/medicine.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">MEDICINES</a>
+            </div>
+          </div> -->
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src=" {{ url_for('static', filename='assets/img/menu/bag.jpg') }}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">BAGS</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src=" {{ url_for('static', filename='assets/img/menu/stationary.jpg') }}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">STATIONERY ITEMS</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src=" {{ url_for('static', filename='assets/img/menu/clothes.jpg') }}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">CLOTHES</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src=" {{ url_for('static', filename='assets/img/menu/clothes.jpg') }}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">SPORTS GOOD</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src=" {{ url_for('static', filename='assets/img/menu/books.jpg') }}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">BOOKS</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src=" {{ url_for('static', filename='assets/img/menu/shoes.jpg') }}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">SHOES</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src=" {{ url_for('static', filename='assets/img/menu/medicine.jpg') }}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">MEDICINES</a>
+            </div>
+          </div>
+
+
+
+          <!-- <div class="col-lg-6 menu-item filter-specialty">
+            <img src="assets/img/menu/kitchenware.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">KITCHENWARE</a>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- rewards  -->
+    <section id="reward" class="reward"></section>
+    <div class="containers">
+      <h1 style="font-size: 60px;"> Reward</h1>
+      <p>All of your donations will be given a estimate price which will be decided by DonateKaro.</p>
+      <p>The value of all your donations will be sumed up.</p>
+
+      <p>When the total is above ₹1000 you are eligible for rewards.</p>
+      <ul>
+        <li>
+          <p>If the total of estimated price of all the donations is in the range of ₹1000-₹4999 (inclusive) then you
+            will receive 10% of the total as reward. </p>
+        </li>
+        <li>
+          <p>If the total of estimated price of all the donations is in the range of ₹5000-₹9999 (inclusive) then you
+            will receive 15% of the total as reward.</p>
+        </li>
+        <li>
+          <p>If the total of estimated price of all the donations is more than ₹10000 then you will receive 20% of the
+            total as reward. </p>
+        </li>
+      </ul>
+      <p>* Transactions will be online (Through paytm).</p>
+      <p>Send us an email ( donatekaroiitj@gmail.com ) to redeem your rewards or for any queries. </p>
+      <hr>
+    </div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact us</h2>
+        </div>
+      </div>
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Indian Institute of Technology Jodhpur
+                  <br>
+                  NH 62 , Surpura Bypass Rd , Karwar , Rajasthan
+                </p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 23:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>donatekaroiitj@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>900076158</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>DONATE KARO FOUNDATION</h3>
+              <p>
+                Indian Institute of Technology Jodhpur <br>
+                NH 62, Surpura Bypass Rd, Kawar , Rajasthan<br><br>
+                <strong>Phone:</strong>9300076256<br>
+                <strong>Email:</strong>donatekaroiitj@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DONATE KARO FOUNDATION</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src=" {{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src=" {{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src=" {{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src=" {{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src=" {{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src=" {{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src=" {{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
