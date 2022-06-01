@@ -1,7 +1,7 @@
 import DonorModel
 
 
-class Repo():
+class Repo:
     def __init__(self, db) -> None:
         self.conn = db.conn
         self.cur = db.cur
